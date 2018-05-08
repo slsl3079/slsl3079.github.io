@@ -1,237 +1,1079 @@
 <html>
     <head>
+        
         <title>
-            Sayan Lala
+            SAYAN LALA |S\L|
         </title>
         
         <!--stylesheet-->
         <link href="style/SL_style.css" type="text/css" rel="stylesheet">
         
+        <!--stylesheet-->
+        <link href="stle/SL_hourglass_style.css" type="text/css" rel="stylesheet">
+        
         <!--font-->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
         
-        <!--jquery-->
+        <!--font#2-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+        
+         <!--jquery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         
         <!--script-->
-        <script type="text/javascript" src="js/SL_script.js">
-        </script>
+        <script type="text/javascript" src="js/SL_script.js"></script>
+        <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!--clock-->
+        <script>
+        /*sl clock*/
+                function startHomeTime()
+                {
+                        var today = new Date();
+                        var h = today.getHours();
+                        var m = today.getMinutes();
+                        var s = today.getSeconds();
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        document.getElementById("home_clock").innerHTML =
+                        h + ":" + m + ":" + s;
+                        var t = setTimeout(startHomeTime, 500);
+                }
+            
+                function startMenuTime()
+                {
+                        var today = new Date();
+                        var h = today.getHours();
+                        var m = today.getMinutes();
+                        var s = today.getSeconds();
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        document.getElementById("menu_clock").innerHTML =
+                        h + ":" + m + ":" + s;
+                        var t = setTimeout(startMenuTime, 500);
+                }
+            
+                function checkTime(i) 
+                {
+                    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                    return i;
+                }
+            
+                function startTime()
+                {
+                    startHomeTime();
+                    startMenuTime();
+                }
+        </script> 
         
     </head>
     
+    <body onload= "startTime()">
+        <!--diamond menu-->
+        <div id="home">
+                <div id="txt_home">|S<b>\</b>L|</div> 
+        </div>
+        <div id="center">
+            <div id="hourglass_x">
+                <div class="center_box" id="who">
+                    <div id="txt_who">
+                        <div class="rotate">
+                            WHO
+                        </div>
+                    </div>
+                </div>
+                <div class="center_box" id="jpn">
+                    <div id="txt_jpn">
+                        <div class="rotate">
+                            JPN
+                        </div>
+                    </div>
+                </div>
+                <div class="center_box" id="ls">
+                    <div id="txt_ls">
+                        <div class="rotate">
+                            |L\S|
+                        </div>
+                    </div>
+                </div>
+                <div class="center_box" id="say">
+                    <div id="txt_say">
+                        <div class="rotate">
+                            SAY
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="home_clock"></div>
+        </div>
+        
+        <!--txt decoration on hover of diamond menu-->
+        <div class="topleft_txt">
+            <div id="am">
+                am
+            </div>
+            <div id="sound">
+                sound
+            </div>
+        </div>
+        <div class="topright_txt">
+            <div id="i">
+                i
+            </div>
+            <div id="rising">
+                rising
+            </div>
+        </div>
+        <div class="bottomleft_txt">
+            <div id="name">
+                name
+            </div>
+            <div id="light">
+                light
+            </div>
+        </div>    
+        <div class="bottomright_txt">
+            <div id="my">
+                my
+            </div>
+            <div id="sun">
+                sun
+            </div>
+        </div>
+        
+        <!--title of page-->
+        <div class="title">
+            <div id="who_title">
+                WHO AM I
+            </div>
+            <div id="jpn_title">
+                JPN RISING SUN
+            </div>
+            <div id="ls_title">
+                |L\S| LIGHT & SOUND
+            </div>
+            <div id="say_title">
+                SAY MY NAME
+            </div>
+        </div>
+        
+        <!--sub menu-->
+        <div class="sub_menu">
     
-    <body>
-        <!--top left of main-->
-        
-        <div id="first_l">
-            <div class="text">
-                L
-            </div>    
-        </div>
-        <div id="first_w">
-            <div class="text">
-                W
-            </div>
-        </div>
-        <div id="first_u">
-            <div class="text">
-                U
-            </div>
-        </div>
-        <div id="first_j">
-            <div class="text">
-                J
-            </div>
-        </div>
-        <div id="first_s">
-            <div class="text">
-                S
-            </div>
-        </div>
-        
-        <!--bottom left of main-->
-        <div id="first_a">
-            <div class="text">
-                A
-            </div>
-        </div>       
-        <div id="first_h">
-            <div class="text">
-                H
-            </div>
-        </div>         
-        <div id="and">
-            <div class="text">
-                &
-            </div>
-        </div>
-        <div id="first_p">
-            <div class="text">
-                P
-            </div>
-        </div>
-        
-        <div id="top_right">
+            <div id="exit"></div>
             
-            <div id="resume">
-                <div class="text">
-                    W<br>H<br>O
+            <div class="selection">
+                <!--who-->
+                <div id="timeline_menu">
+                    <span class="line_wrap"><span class="line"></span>TIMELINE</span>
+                </div>
+                <!--jpn-->
+                <div id="jaa_menu">
+                    <span class="line_wrap"><span class="line"></span>JAA</span>
+                </div>
+                <!--ls-->
+                <div id="ls_menu">
+                    <span class="line_wrap"><span class="line"></span>|L\S|</span>
+                </div>
+                <!--say-->
+                <div id="social_menu">
+                    <span class="line_wrap"><span class="line"></span>SOCIAL</span>
+                </div>
+            </div>
+            <div class="selection">
+                <!--who-->
+                <div id="likes_menu">
+                    <span class="line_wrap"><span class="line"></span>LIKES</span>
+                </div>
+                <!--jpn-->
+                <div id="imi_menu">
+                    <span class="line_wrap"><span class="line"></span>| |\/| |</span>
+                </div>
+                <!--ls-->
+                <div id="lnl_menu">
+                    <span class="line_wrap"><span class="line"></span>L | L</span>
+                </div>
+                <!--say-->
+                <div id="lala_menu">
+                    <span class="line_wrap"><span class="line"></span>|S\L|</span>
+                </div>
+            </div>
+            <div class="selection">
+                <!--who-->
+                <div id="inspiration_menu">
+                    <span class="line_wrap"><span class="line"></span>INSPIRATION</span>
+                </div>
+                <!--jpn-->
+                <div id="tiv_menu">
+                    <span class="line_wrap"><span class="line"></span>T-IV</span>
+                </div>
+                <!--ls-->
+                <div id="sns_menu">
+                    <span class="line_wrap"><span class="line"></span>S | S</span>
+                </div>
+                <!--say-->
+                <div id="contact_menu">
+                    <span class="line_wrap"><span class="line"></span>CONTACT</span>
                 </div>
             </div>
             
-            <div id="design">
-                <div class="text">
-                    U<br>&<br>I
-                </div>
-            </div>
-            
-        </div>   
-        
-        <div id="bottom_left">
-        
-            <div id="consulting">
-                <div class="text">
-                    S<br>A<br>Y
-                </div>
-            </div>
-
-            <div id="japan">
-                <div class="text">
-                    J<br>P<br>N
-                </div>
-            </div>
-            
-        </div>
-        
-        <!--top right of main-->
-        <div id="second_l">
-            <div class="text">
-                L
-            </div>
-        </div>
-        <div id="first_o">
-            <div class="text">
-                O
-            </div>
-        </div>
-        <div id="first_i">
-            <div class="text">
-                I
-            </div>
-        </div>
-        <div id="first_n">
-            <div class="text">
-                N
-            </div>
-        </div>
-        <div id="first_y">
-            <div class="text">
-                Y
+            <div id="menu_clock"></div>
+            <div id="menu_home">
+                <div id="txt_home">|S<b>\</b>L|</div> 
             </div>
         </div>
         
-        <!--bottom left of main-->
-        <div id="second_a">
-            <div class="text">
-                A
-            </div>
-        </div>
-        <div id="question">
-            <div class="text">
-                ?
-            </div>
-        </div>
-        
-        <div id="main">
-            
-            <div id="main_container">
-                <div id="characters_SAYAN">
-                    S<br>A<br>Y<br>A<br>N
+        <!--content-->
+        <div class="content">
+            <div class="column">
+                <!--who section-->
+                <div id="timeline_a">
+                    2010 - 2013
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="jala_select">Japanese Language</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="jaa_select">JAA</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="startedberk_select">Started UC Berkeley</span></span>
                 </div>
-               
-                <div class="top_info">
-                    <div id="ellipsis">
-                        .<br>.<br>.
-                    </div>
-                    
+                <div id="like_a">
+                    CULTURE & CREATIVITY
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="fashion_select">Fashion</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="music_select">Music</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="ftv_select">Film/Television</span></span>
                 </div>
-               
-                <div class="center_info1">
-                    <div id="am">
-                        am
-                    </div>
-                    <div id="can">
-                        des
-                    </div>
-                    <div id="some">
-                        can
-                    </div>
-                    <div id="sun">
-                        the
-                    </div>
+                <div id="inspi_a">
+                    ARTISTS
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="olivia_select">Olivia Lufkin</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="yohji_select">Yohji Yamamoto</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="park_select">Park Chan-Wook</span></span>
                 </div>
                 
-                <div class="center_info2">
-                    <div id="am_2">
-                        i
-                    </div>
-                    
-                    <div id="do">
-                        ign
-                    </div>
-                    
-                    <div id="thing">
-                        we
-                    </div>
-                    <div id="rise">
-                        sun
-                    </div>
+                <!--jpn section-->
+                <div id="jaa_a">
+                    JAPAN
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="jaco_select">Japanese Conversation</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="jato_select">Japanese Topics</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="jaac_select">Japanese Activities</span></span>
+                </div>
+                <div id="imi_a">
+                    I
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="self_select">Self</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="learn_select">Learning</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="grow_select">Growing</span></span>
+                </div>
+                <div id="tiv_a">
+                    TRANSLATIONS
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="acc_select">Accurate</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="fast_select">Fast</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="fun_select">Fun</span></span>
                 </div>
                 
-                <div class="bottom_info">
-                    <div id="ellipsis_2">
-                        .<br>.<br>.
-                    </div>
+                <!--say section-->
+                <div id="soc_a">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><span class="line_wrap"><span class="linechoice"></span><span id="facebook_select">Facebook</span></span>
+                </div>
+                <div id="sl_a">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><span class="line_wrap"><span class="linechoice"></span><span id="sayan_select">Sayan</span></span>
+                </div>
+                <div id="con_a">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><span class="line_wrap"><span class="linechoice"></span><span id="businessinquiries_select">Business Inquiries</span></span>
                 </div>
                 
-            </div>
-            <div class="who_info">
-                <div id="who_text">
-                    <span id="blue">I am Sayan Lala.</span><br><br>Dreamer, Designer, Linguist, Leader & above all – DAREDEVIL & LOVER.<br><br>
-                    I dare myself everyday to be different than the trend & status quo.<br><br>I wish to show to the world the benefits of taking the road less travelled by moving forth with my projects and ambitions no matter how grandeur they may seem.<br><br>
-                    I love to learn!<br><br>- NOT JUST about the knowledge and secrets of the world but love to learn better ways to work hand in hand with the person across the table no matter how great a sea of differences there are.<br><br>
-                    My Audacity and Affability are a key part of me to help U&I succeed. 
+                <!--ls section-->
+                <div id="ls_a">
+                    LIGHT
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="incept_select">Inception</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="imagine_select">Imagination</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="create_select">Creation</span></span>
                 </div>
-
-            </div>
-            <div class="uni_info">
-                <div id="uni_text">
-                    <span id="blue">I design with u (you) in mind.</span><br><br> 
-                    My work on design include both web and app interfaces.<br><br>Design is not just strictly visual, but systematical as well.<br><br>
-                    I work with u to make processes of going through projects dealing with heavy content,<br><br> efficient, effective,<br><br> and<br><br>very very very<br><br>fun. 
+                <div id="lnl_a">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
-            </div>
-            
-            <div class="say_info">
-                <div id="say_text">
-                    <span id="blue">Say, how about coffee?</span><br><br> 
-                    While the beauty of technology today can let us communicate fast and easily,<br>don’t feel shy to drop me a message on meeting up sometime face to face.<br><br>I promise I don’t bite!<br><br>
-                    E-mail me @<br>slsl3079@gmail.com or say.lala@berkeley.edu
+                <div id="sns_a">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
             </div>
-            
-            <div class="jpn_info">
-                <div id="jpn_text">
-                    <span id="blue">Japan</span><br>, it’s culture and language has had a profound impact on my life.<br><br><br>
-                    Learning Japanese and actually doing my best to use it while communicating with another part of the world and helping Japanese people understand more about culture in the USA, made me realize that knowledge cannot go wasted – it must be used for a greater cause:<br>community<br><br>
-                    Now that I am fluent and have a deep understanding I wish to give back to those who also take an interest in Japan, Japanese language, and Japanese culture.<br><br>
-                    <span id="blue">Tutoring</span><br>Prepare for a 1 on 1 integrative take on the Japanese language<br><br>
-                    <span id="blue">JAA</span><br>A society I founded to bring those interested in Japanese & American language/culture together. Visit: jaadeanza.com<br><br>
-                    <span id="blue">Translations</span><br>Send me a quick message and I’ll be more than happy to translate anything you have trouble understanding or anything you want to. Japanese->English or English->Japanese
+            <div class="column">
+                <!--who section-->
+                <div id="timeline_b">
+                    2013 - 2016
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="research_select">Research in UI/UX</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="foundedls_select">Founded |L\S|: Libre Spiritus</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="graduatedberk_select">Graduated UC Berkeley</span></span>
                 </div>
-            
+                <div id="like_b">
+                    HOBBIES & LEISURE
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="anime_select">Anime/Animation</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="rpg_select">Single Player RPGs</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="running_select">Running/Hiking</span></span>
+                </div>
+                <div id="inspi_b">
+                    DREAMERS & VISIONARIES
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="satoshi_select">Satoshi Kon</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="leslie_select">Leslie Benzies</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="ginoy_select">Ginoy</span></span>
+                </div>
+                
+                <!--jpn section-->
+                <div id="jaa_b">
+                    AMERICA
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="engcon_select">English Conversation</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="amto_select">American Topics</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="amact_select">American Activities</span></span>
+                </div>
+                <div id="imi_b">
+                    MI
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="soul_select">Soul</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="search_select">Searching</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="venture_select">Venturing</span></span>
+                </div>
+                <div id="tiv_b">
+                    TALK
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="natural_select">Natural</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="integrative_select">Integrative</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="lotsoffun_select">Lots of Fun</span></span>
+                </div>
+                
+                <!--say section-->
+                <div id="soc_b">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><span class="line_wrap"><span class="linechoice"></span><span id="youtube_select">YouTube</span></span>
+                </div>
+                <div id="sl_b">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><span class="line_wrap"><span class="linechoice"></span><span id="lala_select">Lala</span></span>
+                </div>
+                <div id="con_b">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><span class="line_wrap"><span class="linechoice"></span><span id="chattea_select">Chat over Tea</span></span>
+                </div>
+                
+                <!--ls section-->
+                <div id="ls_b">
+                    SOUND
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="realization_select">Realization</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="connection_select">Connections</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="traction_select">Traction</span></span>
+                </div>
+                <div id="lnl_b">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>TO BE REVEALED 2018|07
+                </div>
+                <div id="sns_b">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>TO BE REVEALED 2018|08
+                </div>
+            </div>
+            <div class="column">
+                <!--who section-->
+                <div id="timeline_c"> 
+                    2016 - NOW
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="expanded_select">Expanded Libre Spiritus</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="accountmanager_select">Account Manager at Apple Inc.</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="guestspeaker_select">Guest Speaker at CRX & Fanime</span></span>
+                </div>
+                <div id="like_c">
+                    BUSINESS & SPECIALIZATION
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="japanese_select">Japanese</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="webdesign_select">Web Design</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="entrepreneurship_select">Entrepreneurship</span></span>
+                </div>
+                <div id="inspi_c">
+                    PIONEERS & ENTREPRENEURS
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="akio_select">Akio Morita</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="larry_select">Larry Ellison</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="waltdisney_select">Walt Disney</span></span>
+                </div>
+                
+                <!--jpn section-->
+                <div id="jaa_c">
+                    ASSOCIATION
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="langexchange_select">Language Exchange</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="simdif_select">Similarities & Differences</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="interculturalact_select">Intercultural Activities</span></span>
+                </div>
+                <div id="imi_c">
+                    IMI
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="meaning_select">Meaning</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="community_select">Community</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="understand_select">Understanding</span></span>
+                </div>
+                <div id="tiv_c">
+                    TEACH
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="comprehensive_select">Comprehensive</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="modern_select">Modern</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="evenmorefun_select">Even more Fun</span></span>
+                </div>
+                
+                <!--say section-->
+                <div id="soc_c">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><span class="line_wrap"><span class="linechoice"></span><span id="instagram_select">Instagram</span></span>
+                </div>
+                <div id="sl_c">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><span class="line_wrap"><span class="linechoice"></span><span id="sayanlala_select">Sayan Lala</span></span>
+                </div>
+                <div id="con_c">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><span class="line_wrap"><span class="linechoice"></span><span id="designtalk_select">Design Talk</span></span>
+                </div>
+                
+                <!--ls section-->
+                <div id="ls_c">
+                    LIBRE SPIRITUS
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="philosophy_select">Philosophy</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="mission_select">Mission</span></span>
+                    <br/><br/><br/><br/>
+                    <span class="line_wrap"><span class="linechoice"></span><span id="present_select">Present</span></span>
+                </div>
+                <div id="lnl_c">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </div>
+                <div id="sns_c">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </div>
             </div>
         </div>
+        
+        <!--detailed info-->
+        <div class="the_choice">
+            <!--who columns choice-->
+            <div id="japanese_language_choice">
+                Japanese Language 
+            </div>
+            <div id="jaa_choice">
+                JAA
+            </div>
+            <div id="started_berkeley_choice">
+                Started UC Berkeley
+            </div>
+            
+            <div id="research_choice">
+                Research in UI/UX
+            </div>
+            <div id="founded_ls_choice">
+                Founded |L\S|: Libre Spiritus
+            </div>
+            <div id="graduated_berkeley_choice">
+                Graduated UC Berkeley
+            </div>
+            
+            <div id="expanded_ls_choice">
+                Expanded Libre Spiritus
+            </div>
+            <div id="accountmanager_choice">
+                Account Manager at Apple Inc.
+            </div>
+            <div id="guestspeaker_choice">
+                Guest Speaker at CRX & FANIME
+            </div>
+            
+            <div id="fashion_choice">
+                Fashion
+            </div>
+            <div id="music_choice">
+                Music
+            </div>
+            <div id="ftv_choice">
+                Film/Television
+            </div>
+            
+            <div id="anime_choice">
+                Anime/Animation
+            </div>
+            <div id="rpg_choice">
+                Single Player RPGs
+            </div>
+            <div id="run_choice">
+                Running/Hiking
+            </div>
+            
+            <div id="jap_choice">
+                Japanese
+            </div>
+            <div id="webdesign_choice">
+                Web Design
+            </div>
+            <div id="entrepreneurship_choice">
+                Entrepreneurship
+            </div>
+            
+            <div id="olivia_choice">
+                Olivia Lufkin
+            </div>
+            <div id="yohji_choice">
+                Yohji Yamamoto
+            </div>
+            <div id="park_choice">
+                Park Chan-Wook
+            </div>
+            
+            <div id="satoshi_choice">
+                Satoshi Kon
+            </div>
+            <div id="leslie_choice">
+                Leslie Benzies
+            </div>
+            <div id="ginoy_choice">
+                Ginoy
+            </div>
+            
+            <div id="akio_choice">
+                Akio Morita
+            </div>
+            <div id="larry_choice">
+                Larry Ellison
+            </div>
+            <div id="walt_choice">
+                Walt Disney
+            </div>
+            
+            <!--jpn columns choice-->
+            <div id="japaneseconvo_choice">
+                Japanese Conversation
+            </div>
+            <div id="japanesetopic_choice">
+                Japanese Topics
+            </div>
+            <div id="japaneseact_choice">
+                Japanese Activities
+            </div>
+            
+            <div id="engcon_choice">
+                English Conversation
+            </div>
+            <div id="americantopics_choice">
+                American Topics
+            </div>
+            <div id="americanactivities_choice">
+                American Activities
+            </div>
+            
+            <div id="languageexchange_choice">
+                Language Exchange
+            </div>
+            <div id="similaritiesandiffs_choice">
+                Similarities & Differences
+            </div>
+            <div id="intercultural_choice">
+                Intercultural Activities
+            </div>
+            
+            <div id="self_choice">
+                Self
+            </div>
+            <div id="learning_choice">
+                Learning
+            </div>
+            <div id="growing_choice">
+                Growing
+            </div>
+            
+            <div id="soul_choice">
+                Soul
+            </div>
+            <div id="searching_choice">
+                Searching
+            </div>
+            <div id="venturing_choice">
+                Venturing
+            </div>
+            
+            <div id="meaning_choice">
+                Meaning
+            </div>
+            <div id="community_choice">
+                Community
+            </div>
+            <div id="understanding_choice">
+                Understanding
+            </div>
+            
+            <div id="accurate_choice">
+                Accurate
+            </div>
+            <div id="fast_choice">
+                Fast
+            </div>
+            <div id="fun_choice">
+                Fun
+            </div>
+            
+            <div id="natural_choice">
+                Natural
+            </div>
+            <div id="integrative_choice">
+                Integrative
+            </div>
+            <div id="lotsoffun_choice">
+                Lots of Fun
+            </div>
+            
+            <div id="comprehensive_choice">
+                Comprehensive
+            </div>
+            <div id="modern_choice">
+                Modern
+            </div>
+            <div id="evenmorefun_choice">
+                Even more Fun
+            </div>
+            
+            <!--say columns choice-->
+            <div id="facebook_choice">
+                Facebook
+            </div>
+            <div id="youtube_choice">
+                YouTube
+            </div>
+            <div id="instagram_choice">
+                Instagram
+            </div>
+            
+            <div id="sayan_choice">
+                Sayan
+            </div>
+            <div id="lala_choice">
+                Lala
+            </div>
+            <div id="sayanlala_choice">
+                Sayan Lala
+            </div>
+            
+            <div id="businessinquiries_choice">
+                Business Inquiries
+            </div>
+            <div id="chatovertea_choice">
+                Chat over Tea
+            </div>
+            <div id="designtalk_choice">
+                Design Talk
+            </div>
+            
+            <!--ls column choice-->
+            <div id="inception_choice">
+                Inception
+            </div>
+            <div id="imagination_choice">
+                Imagination
+            </div>
+            <div id="creation_choice">
+                Creation
+            </div>
+            
+            <div id="realization_choice">
+                Realization
+            </div>
+            <div id="connections_choice">
+                Connections
+            </div>
+            <div id="traction_choice">
+                Traction
+            </div>
+            
+            <div id="philosophy_choice">
+                Philosophy
+            </div>
+            <div id="mission_choice">
+                Mission
+            </div>
+            <div id="present_choice">
+                Present
+            </div>
+            
+            <!--sub menu item choices-->
+            <div id="timelinemenu_choice">
+                TIMELINE
+            </div>
+            <div id="likesmenu_choice">
+                LIKES
+            </div>
+            <div id="inspirationmenu_choice">
+                INSPIRATION
+            </div>
+            
+            <div id="jaamenu_choice">
+                JAA
+            </div>
+            <div id="imimenu_choice">
+                | |\/| |
+            </div>
+            <div id="tivmenu_choice">
+                T-IV
+            </div>
+            
+            <div id="socialmenu_choice">
+                SOCIAL
+            </div>
+            <div id="slmenu_choice">
+                |S\L|
+            </div>
+            <div id="contactmenu_choice">
+                CONTACT
+            </div>
+            
+            <div id="lsmenu_choice">
+                |L\S|
+            </div>
+            <div id="lnlmenu_choice">
+                L | L
+            </div>
+            <div id="snsmenu_choice">
+                S | S
+            </div>
 
+        </div>
+        <div id="division">
+        </div>
+        <div id="division2">
+        </div>
+        <div class="information">
+            <!--who columns info-->
+            <div id="japanese_language_info">
+                Started learning Japanese and finished learning what I wanted to learn in 2 years. Won a speech <a href="https://www.youtube.com/watch?v=8gWtQrLYbpY">competition</a>.
+            </div>
+            <div id="jaa_info">
+                Founded an organization to bring Japanese interested in American Culture and anyone interested in Japanese culture together. 
+            </div>
+            <div id="started_berkeley_info">
+                Transfered to UC Berkeley from De Anza/Foothill College and started learning Cognitive Science. 
+            </div>
+            
+            <div id="research_info">
+                Researched how culturally collectivist backgrounds in East Asia effect UI/UX interpretation and  usability.
+            </div>
+            <div id="founded_ls_info">
+                Founded Libre Spiritus providing networking for freelance and student filmmakers across the Bay Area.
+            </div>
+            <div id="graduated_berkeley_info">
+                Graduated UC Berkeley in December 2015 with a B.A in Cognitive Science
+            </div>
+            
+            <div id="expanded_ls_info">
+                I had grown Libre Spiritus to a network of about 150 freelance filmmakers in the Bay Area alone. 
+            </div>
+            <div id="accountmanager_info">
+                Worked at Apple Inc. as a Content/Account Manager for 1 year & made their categorization more culturally integrated.
+            </div>
+            <div id="guestspeaker_info">
+                Presented panel about Osaka and Entertainemnt Industry at Fanime(2014-2017) 
+                and CRX(2017).
+            </div>
+            
+            <div id="fashion_info">
+                LOVE coordinating and styling outfits in the PUNK/GRUNGE scene with Avant-Garde pieces. 
+            </div>
+            <div id="music_info">
+                Listen to all sorts of music such as Dreampop with Grimes to Progressive Rock such as Ling Tosite Sigure. 
+            </div>
+            <div id="ftv_info">
+                LOVE worldbuilding films with deep intricate characters who test each others limits. 
+            </div>
+            
+            <div id="anime_info">
+                Anime with deep psychological and philosophical undertones are my style. Animation with epic character transformations are my substance.
+            </div>
+            <div id="rpg_info">
+                Taking charge of a character by maxing out every skill, hp, mp and whatnot is NOT A WASTE OF TIME.
+            </div>
+            <div id="run_info">
+                50k a week is how I do it; breathe in, breathe out and enjoy the ride nature brings. 
+            </div>
+            
+            <div id="jap_info">
+                Communicating in Japanese fluently to ensure deals with Japanese companies go through successfully.
+            </div>
+            <div id="webdesign_info">
+                Crafting simplistic designs with the html, css, js, domain name and hosting necessary to run it. 
+            </div>
+            <div id="entrepreneurship_info">
+                Producing platforms to bring artistic and cultural vision together to craft works of inspiration and innovation. 
+            </div>
+            
+            <div id="olivia_info">
+                My first love and songstress who continuously saves and inspires my soul with her heart-wrenched vocals and melodically dreamy soundscapes. 
+            </div>
+            <div id="yohji_info">
+                The fashion designer and icon who I absolutely look up to for doing such a prolific and damn good job in bring wearable and modern techwear and avant-garde pieces to the industry.
+            </div>
+            <div id="park_info">
+                The director with great artistic vision venturing through stories with rebellious vs perverted characters hearts certainly broadened my understanding of the world. 
+            </div>
+            
+            <div id="satoshi_info">
+                The late animation director brought strong characters in very strange and distorted worlds which has driven my soul to emrbace and endure any harsh surroundings of mine. 
+            </div>
+            <div id="leslie_info">
+                The legendary producer of game series: GRAND THEFT AUTO who showed me what guts and daring vision it take sto create such a ground-breaking franchise and social commentary of American society. 
+            </div>
+            <div id="ginoy_info">
+                A model, actress, and runner who primarily inspired me to run after seeing her transformation from a lazy gamer to a gamer that also loves to run ULTRAs and stay healthy.
+            </div>
+            
+            <div id="akio_info">
+                The cofounder and former CEO of Sony Corp (back when it was absolutely good). Before Apple, there was Sony and Akio Morita was the first one out of Japan's tech industry to make it big internationally and make a name for Japanese electronics. He and his legacy and leadership shows me what it takes in the Tech industry - guts and the ability to say no to critics and others. 
+            </div>
+            <div id="larry_info">
+                The absolutely ruthless former CEO of Oracle Corp provides some interesting insight in regards to business and entrepreneurship. In regards to competition: it's not too important to succeed so long as others fail.
+            </div>
+            <div id="walt_info">
+                "It all started with a mouse" - Walt Disney. That quote right there is enough to tell you about the man and why he inspires me to this day. Anything can become an empire so long as you dream big and keep at it. 
+            </div>
+            
+            <!--jpn columns info-->
+            <div id="japaneseconvo_info">
+                Meet other Japanese people in JAA and have wonderful conversations in Japanese.
+            </div>
+            <div id="japanesetopic_info">
+                Learn about topics surrounding Japan such as Japanese holidays and much more.
+            </div>
+            <div id="japaneseact_info">
+                Enjoy and Learn with numerous activities revolving around Japanese culture.
+            </div>
+            
+            <div id="engcon_info">
+                If you're Japanese or a foreigner trying to learn English conversation this place is the place to be. 
+            </div>
+            <div id="americantopics_info">
+                If you're into Americana culture please come by to learn more about what's at the heart of the USA.
+            </div>
+            <div id="americanactivities_info">
+                Loads of patriotic activities celebrating the culture of USA. 
+            </div>
+            
+            <div id="languageexchange_info">
+                JAA is the place for language exchange of Japanese and English. You'll find native speakers of both to ensure that you definitely get the best. 
+            </div>
+            <div id="similaritiesandiffs_info">
+                You get to see the similarities and differences between the cultures making you more aware about how they relate with each other. 
+            </div>
+            <div id="intercultural_info">
+                Experience both cultures through a mesh of activities and learn more about each others cultures.
+            </div>
+            
+            <div id="self_info">
+                Find your true self in where you want to go with your life through the IMI program.
+            </div>
+            <div id="learning_info">
+                On finding your true self you have to be aware and learn about things surrounding you to understand yourself better
+            </div>
+            <div id="growing_info">
+                While attempting to learn different languages and cultures you can grow as an individual and understand what you like and what you wish to pursue.
+            </div>
+            
+            <div id="soul_info">
+                "Mi" means soul in Japanese and it is the thing one should be looking after when helping "mi." 
+            </div>
+            <div id="searching_info">
+                There's a lot of soul-searching that needs to take place before one can actually start attempting to pursue their life long dream. The IMI program will help you with that for sure. 
+            </div>
+            <div id="venturing_info">
+                Soul-searching occurs through venturing many different activities and walks of life. It is through this where the life long dream is realized. 
+            </div>
+            
+            <div id="meaning_info">
+                The reason why I named the program "IMI" is because it's a combination of the "I" and "MI" - the self and the soul. IMI in Japanese means "meaning" - I believe that meaning is found when the self and soul are one and united. 
+            </div>
+            <div id="community_info">
+                Of course finding the self is not something which is done alone, you have a community of many others who are willing to help you through the struggle. 
+            </div>
+            <div id="understanding_info">
+                After going through the program I hope to help you understand yourself better. 
+            </div>
+            
+            <div id="accurate_info">
+                The translations I provide are absolutely accurate - no nuances or interpretation left alone. 
+            </div>
+            <div id="fast_info">
+                The translations I provide are fast and depending on the situation it may even be real time. 
+            </div>
+            <div id="fun_info">
+                I don't just translate professional things, but many other fun things - if you want to curse in your blog post or send a flirty message via messanger. 
+            </div>
+            
+            <div id="natural_info">
+                Any talk you would be like to have with me in Japanese is going to be an absolutely natural conversation. I'm not a textbook and don't intend for my conversations with you to be. 
+            </div>
+            <div id="integrative_info">
+                Talking with me will absolutely be integrative on any Japanese lesson plan you're going through. Shall definitely use any grammar points your learning or any vocabulary which you need to learn as well.
+            </div>
+            <div id="lotsoffun_info">
+                Moreover the conversation will absolutely be fun - not a boring textbook conversation but one that relates with your life and your daily experiences. I will even bring in many of my Japanese colleagues and friends to speak with you to make it even more fun. 
+            </div>
+            
+            <div id="comprehensive_info">
+                Teaching Japanese will absolutely be comprehensive in speaking, listening, reading and writing. I won't just teach formal Japanese but casual Japanese as well. 
+            </div>
+            <div id="modern_info">
+                The lessons which I will provide will be up to date and modern - things which you will be using in either the workplace or everyday life in front of your Japanese friends. 
+            </div>
+            <div id="evenmorefun_info">
+                Teaching will be a lot of fun as well as I plan to make the lessons apply to your daily life and have a constructive lesson plan which you can actually use. 
+            </div>
+            
+            <!--say columns info-->
+            <div id="facebook_info">
+                This is my Facebook. 
+            </div>
+            <div id="youtube_info">
+                This is my YouTube Channel. 
+            </div>
+            <div id="instagram_info">
+                This is my Instagram. 
+            </div>
+            
+            <div id="sayan_info">
+                My name "Sayan" means "wise/intelligent man." I like to believe my parents were being a bit too hopeful when choosing this. 
+            </div>
+            <div id="lala_info">
+                My last name was something I was always made fun of back when I was a kid, but now it's my coolest part of the name especially when many Japanese call me Lala-chan. 
+            </div>
+            <div id="sayanlala_info">
+                My full name is Sayan Lala - please to meet you and hope you're enjoying my website. Please email me here. 
+            </div>
+            
+            <div id="businessinquiries_info">
+                Would you like talk about business and collaborate on a project together? Message me here.
+            </div>
+            <div id="chatovertea_info">
+                Would you like to just chat over tea and have a good time together?
+            </div>
+            <div id="designtalk_info">
+                Would you like to talk about design (UI/UX) principles?
+            </div>
+            
+            <!--ls column info-->
+            <div id="inception_info">
+                I wanted to make Libre Spiritus as I noticed there was a lack of film production programs around the Bay Area. So long as there was a place for freelance filmmakers to meet, film can be made. 
+            </div>
+            <div id="imagination_info">
+                I realized that I wanted not just a network but a real life platform as well where people can collaborate on projects together. 
+            </div>
+            <div id="creation_info">
+                I created Libre Spiritus in 2013 at Berkeley and found all the students who were interested in film to join and start working on the platform and network. 
+            </div>
+            
+            <div id="realization_info">
+                Libre Spiritus was realized and it became much more than just a platform. I had created a think tank for film production. 
+            </div>
+            <div id="connections_info">
+                The connections started growing from UC Berkeley to many other schools in the Bay Area from SFSU to SJSU. 
+            </div>
+            <div id="traction_info">
+                The organization kept growing and now we're at 150 members in the Bay Area making it a huge step for us. 
+            </div>
+            
+            <div id="philosophy_info">
+                The Philosophy of Libre Spiritus is to "free your soul." We don't want anything in the way of your film idea being realized and produced. 
+            </div>
+            <div id="mission_info">
+                We wish to provide everyone with the opportunity to produce great quality film which has not been produced before in Hollywood and other mainstream areas due to market concerns. We want people to be risky and hungry for new ideas. 
+            </div>
+            <div id="present_info">
+                At 150 members we are now looking for a way to make our mission virtual and bring the world's filmmakers together. 
+            </div>
+            
+            <!--sub menu item infos-->
+            <div id="timelinemenu_info">
+                Welcome to my Timeline of my life thus far, select any to find out more. 
+            </div>
+            <div id="likesmenu_info">
+                These are some of the things I like, select any to find out more. 
+            </div>
+            <div id="inspirationmenu_info">
+                These are things which inspire me, select anything to find out more. 
+            </div>
+            
+            <div id="jaamenu_info">
+                JAA: Japanese & American Association is an assoc. connecting Japanese interested in American culture and anyone else interested in Japanese Culture. Visit JAA here. 
+            </div>
+            <div id="imimenu_info">
+                | |\/| |: A program for students in Japan to take a cultural dive through breaking internationally via English and learning a bit about American pioneering and entrepreneurship.
+            </div>
+            <div id="tivmenu_info">
+                T-IV: A program which I have for those that need services in Japanese language: Translating, Talks, Teaching, or the Total package of Translations, Talks, and Teachings!
+            </div>
+            
+            <div id="socialmenu_info">
+                Connect with me via SNS if you so choose. 
+            </div>
+            <div id="slmenu_info">
+                Some things you may want to know about my name. 
+            </div>
+            <div id="contactmenu_info">
+                Contact me privately depending on occassion. 
+            </div>
+            
+            <div id="lsmenu_info">
+                |L\S|: Libre Spiritus is the place where artist combine both Light and Sound to Liberate their Soul. Visit here. 
+            </div>
+            <div id="lnlmenu_info">
+                More information shall be provided on March.
+            </div>
+            <div id="snsmenu_info">
+                More information shall be provided on April. 
+            </div>
+            
+        </div>
+        <div id="back">
+            ___<br>
+            ___<br>
+            ___<br>
+        </div>
     </body>
 </html>
