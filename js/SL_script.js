@@ -100,7 +100,7 @@ $(document).ready(function(){
     
     /*sub menu selection*/
     
-    $(".column").click(function(){
+    /*$(".column").click(function(){
         $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
         $(".title").toggle("blind", {direction: "right"}, 1000, function(){
             $("#division").toggle("blind", {direction: "left"}, 1000)
@@ -108,7 +108,7 @@ $(document).ready(function(){
                 $("#back").slideDown("slow");
             })      
         })
-    })
+    })*/
     
     $("#back").click(function(){
         $("#division").toggle("blind", {direction:"right"}, 1000)
@@ -324,352 +324,814 @@ $(document).ready(function(){
         $("#timeline_a, #timeline_b, #timeline_c").toggle("blind", {direction: "down"}, 1000)
         $("#japanese_language_choice, #japanese_language_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/jala.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#jaa_select").click(function(){
         $("#timeline_a, #timeline_b, #timeline_c").toggle("blind", {direction: "down"}, 1000)
         $("#jaa_choice, #jaa_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/jaa.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#startedberk_select").click(function(){
         $("#timeline_a, #timeline_b, #timeline_c").toggle("blind", {direction: "down"}, 1000)
         $("#started_berkeley_choice, #started_berkeley_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/startedberk.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#fashion_select").click(function(){
         $("#like_a, #like_b, #like_c").toggle("blind", {direction: "down"}, 1000)
         $("#fashion_choice, #fashion_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/fashion.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#music_select").click(function(){
         $("#like_a, #like_b, #like_c").toggle("blind", {direction: "down"}, 1000)
         $("#music_choice, #music_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/music.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#ftv_select").click(function(){
         $("#like_a, #like_b, #like_c").toggle("blind", {direction: "down"}, 1000)
         $("#ftv_choice, #ftv_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/ftv.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#olivia_select").click(function(){
         $("#inspi_a, #inspi_b, #inspi_c").toggle("blind", {direction: "down"}, 1000)
         $("#olivia_choice, #olivia_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/olivia.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#yohji_select").click(function(){
         $("#inspi_a, #inspi_b, #inspi_c").toggle("blind", {direction: "down"}, 1000)
         $("#yohji_choice, #yohji_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/yohji.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#park_select").click(function(){
         $("#inspi_a, #inspi_b, #inspi_c").toggle("blind", {direction: "down"}, 1000)
         $("#park_choice, #park_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/park.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#jaco_select").click(function(){
         $("#jaa_a, #jaa_b, #jaa_c").toggle("blind", {direction: "down"}, 1000)
         $("#japaneseconvo_choice, #japaneseconvo_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/jaco.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#jato_select").click(function(){
         $("#jaa_a, #jaa_b, #jaa_c").toggle("blind", {direction: "down"}, 1000)
         $("#japanesetopic_choice, #japanesetopic_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/jato.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#jaac_select").click(function(){
         $("#jaa_a, #jaa_b, #jaa_c").toggle("blind", {direction: "down"}, 1000)
         $("#japaneseact_choice, #japaneseact_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/jaac.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#self_select").click(function(){
         $("#imi_a, #imi_b, #imi_c").toggle("blind", {direction: "down"}, 1000)
         $("#self_choice, #self_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/self.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#learn_select").click(function(){
         $("#imi_a, #imi_b, #imi_c").toggle("blind", {direction: "down"}, 1000)
         $("#learning_choice, #learning_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/learn.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#grow_select").click(function(){
         $("#imi_a, #imi_b, #imi_c").toggle("blind", {direction: "down"}, 1000)
         $("#growing_choice, #growing_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/grow.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#acc_select").click(function(){
         $("#tiv_a, #tiv_b, #tiv_c").toggle("blind", {direction: "down"}, 1000)
         $("#accurate_choice, #accurate_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/accurate.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#fast_select").click(function(){
         $("#tiv_a, #tiv_b, #tiv_c").toggle("blind", {direction: "down"}, 1000)
         $("#fast_choice, #fast_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/fast.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#fun_select").click(function(){
         $("#tiv_a, #tiv_b, #tiv_c").toggle("blind", {direction: "down"}, 1000)
         $("#fun_choice, #fun_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/fun.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#facebook_select").click(function(){
         $("#soc_a, #soc_b, #soc_c").toggle("blind", {direction: "down"}, 1000)
         $("#facebook_choice, #facebook_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/say/facebook.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#sayan_select").click(function(){
         $("#sl_a, #sl_b, #sl_c").toggle("blind", {direction: "down"}, 1000)
         $("#sayan_choice, #sayan_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/say/sayan.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#businessinquiries_select").click(function(){
         $("#con_a, #con_b, #con_c").toggle("blind", {direction: "down"}, 1000)
         $("#businessinquiries_choice, #businessinquiries_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/say/businessinquiries.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#incept_select").click(function(){
         $("#ls_a, #ls_b, #ls_c").toggle("blind", {direction: "down"}, 1000)
         $("#inception_choice, #inception_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/ls/inception.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#imagine_select").click(function(){
         $("#ls_a, #ls_b, #ls_c").toggle("blind", {direction: "down"}, 1000)
         $("#imagination_choice, #imagination_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/ls/imagination.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#create_select").click(function(){
         $("#ls_a, #ls_b, #ls_c").toggle("blind", {direction: "down"}, 1000)
         $("#creation_choice, #creation_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/ls/creation.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#research_select").click(function(){
         $("#timeline_a, #timeline_b, #timeline_c").toggle("blind", {direction: "down"}, 1000)
         $("#research_choice, #research_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/research.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#foundedls_select").click(function(){
         $("#timeline_a, #timeline_b, #timeline_c").toggle("blind", {direction: "down"}, 1000)
         $("#founded_ls_choice, #founded_ls_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/foundedls.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#graduatedberk_select").click(function(){
         $("#timeline_a, #timeline_b, #timeline_c").toggle("blind", {direction: "down"}, 1000)
         $("#graduated_berkeley_choice, #graduated_berkeley_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/graduatedberk.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#anime_select").click(function(){
         $("#like_a, #like_b, #like_c").toggle("blind", {direction: "down"}, 1000)
         $("#anime_choice, #anime_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/anime.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#rpg_select").click(function(){
         $("#like_a, #like_b, #like_c").toggle("blind", {direction: "down"}, 1000)
         $("#rpg_choice, #rpg_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/rpg.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#running_select").click(function(){
         $("#like_a, #like_b, #like_c").toggle("blind", {direction: "down"}, 1000)
         $("#run_choice, #run_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/run.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#satoshi_select").click(function(){
         $("#inspi_a, #inspi_b, #inspi_c").toggle("blind", {direction: "down"}, 1000)
         $("#satoshi_choice, #satoshi_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/satoshi.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#leslie_select").click(function(){
         $("#inspi_a, #inspi_b, #inspi_c").toggle("blind", {direction: "down"}, 1000)
         $("#leslie_choice, #leslie_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/leslie.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#ginoy_select").click(function(){
         $("#inspi_a, #inspi_b, #inspi_c").toggle("blind", {direction: "down"}, 1000)
         $("#ginoy_choice, #ginoy_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/ginoy.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#engcon_select").click(function(){
         $("#jaa_a, #jaa_b, #jaa_c").toggle("blind", {direction: "down"}, 1000)
         $("#engcon_choice, #engcon_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/engcon.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#amto_select").click(function(){
         $("#jaa_a, #jaa_b, #jaa_c").toggle("blind", {direction: "down"}, 1000)
         $("#americantopics_choice, #americantopics_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/americantopics.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#amact_select").click(function(){
         $("#jaa_a, #jaa_b, #jaa_c").toggle("blind", {direction: "down"}, 1000)
         $("#americanactivities_choice, #americanactivities_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/americanactivities.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#soul_select").click(function(){
         $("#imi_a, #imi_b, #imi_c").toggle("blind", {direction: "down"}, 1000)
         $("#soul_choice, #soul_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/soul.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#search_select").click(function(){
         $("#imi_a, #imi_b, #imi_c").toggle("blind", {direction: "down"}, 1000)
         $("#searching_choice, #searching_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/searching.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#venture_select").click(function(){
         $("#imi_a, #imi_b, #imi_c").toggle("blind", {direction: "down"}, 1000)
         $("#venturing_choice, #venturing_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/venturing.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#natural_select").click(function(){
         $("#tiv_a, #tiv_b, #tiv_c").toggle("blind", {direction: "down"}, 1000)
         $("#natural_choice, #natural_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/natural.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#integrative_select").click(function(){
         $("#tiv_a, #tiv_b, #tiv_c").toggle("blind", {direction: "down"}, 1000)
         $("#integrative_choice, #integrative_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/integrative.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#lotsoffun_select").click(function(){
         $("#tiv_a, #tiv_b, #tiv_c").toggle("blind", {direction: "down"}, 1000)
         $("#lotsoffun_choice, #lotsoffun_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/lotsoffun.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#youtube_select").click(function(){
         $("#soc_a, #soc_b, #soc_c").toggle("blind", {direction: "down"}, 1000)
         $("#youtube_choice, #youtube_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/say/youtube.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#lala_select").click(function(){
         $("#sl_a, #sl_b, #sl_c").toggle("blind", {direction: "down"}, 1000)
         $("#lala_choice, #lala_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/say/lala.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#chattea_select").click(function(){
         $("#con_a, #con_b, #con_c").toggle("blind", {direction: "down"}, 1000)
         $("#chatovertea_choice, #chatovertea_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/say/chatovertea.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#realization_select").click(function(){
         $("#ls_a, #ls_b, #ls_c").toggle("blind", {direction: "down"}, 1000)
         $("#realization_choice, #realization_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/ls/realization.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#connection_select").click(function(){
         $("#ls_a, #ls_b, #ls_c").toggle("blind", {direction: "down"}, 1000)
         $("#connections_choice, #connections_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/ls/connection.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#traction_select").click(function(){
         $("#ls_a, #ls_b, #ls_c").toggle("blind", {direction: "down"}, 1000)
         $("#traction_choice, #traction_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/ls/traction.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#expanded_select").click(function(){
         $("#timeline_a, #timeline_b, #timeline_c").toggle("blind", {direction: "down"}, 1000)
         $("#expanded_ls_choice, #expanded_ls_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/expanded.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#accountmanager_select").click(function(){
         $("#timeline_a, #timeline_b, #timeline_c").toggle("blind", {direction: "down"}, 1000)
         $("#accountmanager_choice, #accountmanager_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/accountmanager.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#guestspeaker_select").click(function(){
         $("#timeline_a, #timeline_b, #timeline_c").toggle("blind", {direction: "down"}, 1000)
         $("#guestspeaker_choice, #guestspeaker_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/guestspeaker.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#japanese_select").click(function(){
         $("#like_a, #like_b, #like_c").toggle("blind", {direction: "down"}, 1000)
         $("#jap_choice, #jap_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/jap.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#webdesign_select").click(function(){
         $("#like_a, #like_b, #like_c").toggle("blind", {direction: "down"}, 1000)
         $("#webdesign_choice, #webdesign_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/webdesign.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#entrepreneurship_select").click(function(){
         $("#like_a, #like_b, #like_c").toggle("blind", {direction: "down"}, 1000)
         $("#entrepreneurship_choice, #entrepreneurship_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/entrepreneurship.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#akio_select").click(function(){
         $("#inspi_a, #inspi_b, #inspi_c").toggle("blind", {direction: "down"}, 1000)
         $("#akio_choice, #akio_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/akio.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#larry_select").click(function(){
         $("#inspi_a, #inspi_b, #inspi_c").toggle("blind", {direction: "down"}, 1000)
         $("#larry_choice, #larry_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/larry.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#waltdisney_select").click(function(){
         $("#inspi_a, #inspi_b, #inspi_c").toggle("blind", {direction: "down"}, 1000)
         $("#walt_choice, #walt_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/who/walt.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#langexchange_select").click(function(){
         $("#jaa_a, #jaa_b, #jaa_c").toggle("blind", {direction: "down"}, 1000)
         $("#languageexchange_choice, #languageexchange_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/langexchange.jpg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#simdif_select").click(function(){
         $("#jaa_a, #jaa_b, #jaa_c").toggle("blind", {direction: "down"}, 1000)
         $("#similaritiesandiffs_choice, #similaritiesandiffs_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/similaritiesandiffs.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#interculturalact_select").click(function(){
         $("#jaa_a, #jaa_b, #jaa_c").toggle("blind", {direction: "down"}, 1000)
         $("#intercultural_choice, #intercultural_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/intercultural.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#meaning_select").click(function(){
         $("#imi_a, #imi_b, #imi_c").toggle("blind", {direction: "down"}, 1000)
         $("#meaning_choice, #meaning_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/meaning.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#community_select").click(function(){
         $("#imi_a, #imi_b, #imi_c").toggle("blind", {direction: "down"}, 1000)
         $("#community_choice, #community_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/community.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#understand_select").click(function(){
         $("#imi_a, #imi_b, #imi_c").toggle("blind", {direction: "down"}, 1000)
         $("#understanding_choice, #understanding_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/understand.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#comprehensive_select").click(function(){
         $("#tiv_a, #tiv_b, #tiv_c").toggle("blind", {direction: "down"}, 1000)
         $("#comprehensive_choice, #comprehensive_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/understand.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#modern_select").click(function(){
         $("#tiv_a, #tiv_b, #tiv_c").toggle("blind", {direction: "down"}, 1000)
         $("#modern_choice, #modern_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/understand.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#evenmorefun_select").click(function(){
         $("#tiv_a, #tiv_b, #tiv_c").toggle("blind", {direction: "down"}, 1000)
         $("#evenmorefun_choice, #evenmorefun_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/jpn/understand.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     
@@ -679,32 +1141,74 @@ $(document).ready(function(){
         $("#soc_a, #soc_b, #soc_c").toggle("blind", {direction: "down"}, 1000)
         $("#instagram_choice, #instagram_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/say/instagram.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#sayanlala_select").click(function(){
         $("#sl_a, #sl_b, #sl_c").toggle("blind", {direction: "down"}, 1000)
         $("#sayanlala_choice, #sayanlala_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/say/sayan_lala.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#designtalk_select").click(function(){
         $("#con_a, #con_b, #con_c").toggle("blind", {direction: "down"}, 1000)
         $("#designtalk_choice, #designtalk_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/say/design_talk.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     $("#philosophy_select").click(function(){
         $("#ls_a, #ls_b, #ls_c").toggle("blind", {direction: "down"}, 1000)
         $("#philosophy_choice, #philosophy_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/ls/philosophy.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#mission_select").click(function(){
         $("#ls_a, #ls_b, #ls_c").toggle("blind", {direction: "down"}, 1000)
         $("#mission_choice, #mission_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/ls/mission.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     $("#present_select").click(function(){
         $("#ls_a, #ls_b, #ls_c").toggle("blind", {direction: "down"}, 1000)
         $("#present_choice, #present_info").delay(1000).toggle("blind", {direction: "left"}, 1000)
         $("body").css("background-image", "url(../images/ls/present.jpeg)")
+        $(".sub_menu").toggle("blind", {direction: "up"}, 1000);
+        $(".title").toggle("blind", {direction: "right"}, 1000, function(){
+            $("#division").toggle("blind", {direction: "left"}, 1000)
+            $("#division2").toggle("blind", {direction: "right"}, 1000, function(){
+                $("#back").slideDown("slow");
+            })      
+        })
     })
     
     
@@ -1079,20 +1583,6 @@ $(document).ready(function(){
             $("#back").fadeOut(200);
         }
     })
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     /*exit sub menu*/
     $("#exit").click(function(){
